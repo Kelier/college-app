@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="base_actionbar_bg">#f5f5f5</color>
+    <color name="base_actionbar_bg_main">#eb4e3d</color>
+    <color name="base_action_bar_title_color">#2f2725</color>
+    <color name="base_tab_indicator_text_color">#f82c22</color>
+    <color name="base_menu_left_bg">#393c44</color>
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="base_color_text_black">#3e3e39</color>
+    <color name="base_color_text_gray">#9fa0a0</color>
+    <color name="base_color_text_white">#ffffff</color>
+    <color name="home_item_color_bg">#f4f6f6</color>
+    <color name="base_bg">#f4f6f6</color>
+    <color name="border_gray">#D5D5D5</color>
+    <color name="E7_gray">#E7E7E7</color>
+    <color name="half_E7_gray">#50E7E7E7</color>
+
+    <!-- zxing -->
+    <color name="color_half_transparent">#b0000000</color>
+    <color name="color_transparent_bg">#80000000</color>
+    <color name="color_transparent_bg1">#e0000000</color>
+    <!-- emot -->
+    <color name="msg_emote_divider">#ffa1a1a1</color>
+    <color name="color_bottom_bg">#272a2e</color>
+    <color name="color_bottom_text_normal">#9da0a4</color>
+    <color name="color_bottom_text_press">#4f9ef6</color>
+    <color name="text_gray">#808080</color>
+    <color name="text_black">#131313</color>
+    <color name="transparent">#00000000</color>
+    <color name="divider_list">#cccccc</color>
+    <color name="msg_chat_bg">#eceff4</color>
+    
+    <color name="theme_bg_color">#f0f2f5</color>
+    <color name="color_theme">#489cfa</color>
+    <color name="c_f98800">#ed4e23</color>
+    
+    <color name="dialog_color_title">#f82c22</color>
+    <color name="guide_color">#898989</color>
+
+    <color name="common_bg">#fcfcfc</color>
+    
+    
+    <color name="white">#ffffff</color>
+     <color name="green">#5cbe6c</color>
+
+
+    <color name="base_shallow_black">#818181</color>
+
+    <!-- 定义应用程序中统一化样式中颜色 -->
+    <color name="main_bg">#fff</color>
+    <color name="title_bg">#00f</color>
+    <color name="title_text">#fff</color>
+    <color name="content_text">#333</color>
+    <color name="footer_menu_normal">#969696</color>
+    <color name="footer_menu_checked">#489cfa</color>
+
+    <!--学校简介信息页面-->
+    <color name="half_alpha_black">#77000000</color>
+    <color name="half_alpha_white">#77ffffff</color>
+    <color name="half_alpha_gray">#a0cdcdcd</color>
+    <color name="college_content_line">#F5F5F5</color>
+    <color name="vertical_line_bg">#ffcdcdcd</color>
+    <color name="orange_text_color">#ffff6c00</color>
+    <color name="gray_text_color">#ff808080</color>
+    <color name="common_line_bg">#ffcdcdcd</color>
+    <color name="list_divide_color">#ffd5d5d5</color>
+    <color name="orange_color">#ffff6c00</color>
+    <color name="querycollege_line_normal">#ffcdcdcd</color>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //////////////////////////////////////////////////////////////////////////////////
+    <color name="account_tip_text_color">#ff131313</color>
+    <color name="album_photo_picker_finish_disabled">#ffcdcdcd</color>
+    <color name="album_photo_picker_finish_enabled">#ff0099ff</color>
+    <color name="album_photo_picker_image_checked_bg">#66000000</color>
+    <color name="album_photo_picker_preview_disabled">#ffcdcdcd</color>
+    <color name="album_photo_picker_preview_enabled">#ff131313</color>
+    <color name="alpha_white">#7fffffff</color>
+    <color name="background_color">#fff0f0f0</color>
+    <color name="batch_item_background">#fff7f7f7</color>
+    <color name="batch_item_text_color">#ff808080</color>
+    <color name="black">#ff000000</color>
+    <color name="black_text">#ff131313</color>
+    <color name="black_text_color">#ff131313</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="blue_btn_disabled_background_color">#ffa9a9a9</color>
+    <color name="blue_btn_normal_background_color">#ff0099ff</color>
+    <color name="blue_btn_pressed_background_color">#ff007ce6</color>
+    <color name="blue_color">#ff00b4ff</color>
+    <color name="blue_text_color">#ff00b4ff</color>
+    <color name="bottom_bar_bg">#fff8f8f8</color>
+    <color name="bottom_bar_btn_text_color">#ffffffff</color>
+    <color name="bottom_bar_btn_text_color_pressed">#ffffffff</color>
+    <color name="cafe_house_praise_text_color">#ffb2b2b2</color>
+    <color name="category_more_content_list_color">#fff0f0f0</color>
+    <color name="chatroom_expression_bg_color_normal">#fff2f2f2</color>
+    <color name="chatroom_expression_bg_color_press">#ffe1e1e1</color>
+    <color name="chatroom_fans_dialog_grante_normal">#ff0099ff</color>
+    <color name="chatroom_fans_dialog_grante_pressed">#ff007ce6</color>
+    <color name="chatroom_send_gift_txt_color">#ff707070</color>
+    <color name="chatroom_student_txt_color">#ff131313</color>
+    <color name="chatroom_teacher_new_txt_color">#ff000000</color>
+    <color name="chatroom_teacher_txt_color">#ffff624d</color>
+    <color name="circle_mask_view_color">#ffe7e7e7</color>
+    <color name="college_line_bg">#ffd5d5d5</color>
+    <color name="color_background">#ffececec</color>
+    <color name="common_page_bg">#ffffffff</color>
+    <color name="default_circle_indicator_fill_color">#ffffffff</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#ffdddddd</color>
+    <color name="default_line_indicator_selected_color">#ff33b5e5</color>
+    <color name="default_line_indicator_unselected_color">#ffbbbbbb</color>
+    <color name="default_title_indicator_footer_color">#ff33b5e5</color>
+    <color name="default_title_indicator_selected_color">#ffffffff</color>
+    <color name="default_title_indicator_text_color">#bbffffff</color>
+    <color name="default_underline_indicator_selected_color">#ff33b5e5</color>
+    <color name="dialog_bg">#66000000</color>
+    <color name="dialog_btn_bg">#66d9d9d9</color>
+    <color name="divider_color">#ffcccccc</color>
+    <color name="erben_color">#ffffc107</color>
+    <color name="errorview_text_color">#ff787878</color>
+    <color name="get_mywealth_normal">#ff007cdc</color>
+    <color name="get_mywealth_pressed">#ff0077d3</color>
+    <color name="gray_background">#7fc0c0c0</color>
+    <color name="gray_color">#ff808080</color>
+    <color name="grey">#ffaaaaaa</color>
+    <color name="grey_text">#ff999999</color>
+    <color name="guide_1_line_color">#ffd5d5d5</color>
+    <color name="half_transparent">#80000000</color>
+    <color name="header_background_color">#fff7f7f7</color>
+    <color name="header_bg_color">#ff00b4ff</color>
+    <color name="header_btn_text_color">#ff007aff</color>
+    <color name="header_btn_text_color_pressed">#ff0065e2</color>
+    <color name="header_disenable_color">#ffc0c0c0</color>
+    <color name="header_text_disenable_color">#ffc6e3f7</color>
+    <color name="header_white_line_color">#ffdfdfdf</color>
+    <color name="hint_color">#ffa2a2a2</color>
+    <color name="home_border_line_color">#ffcbcccd</color>
+    <color name="lexue_suggest_click_color">#ffff6c00</color>
+    <color name="lexue_suggest_click_press_color">#ffffcc7c</color>
+    <color name="lexue_suggest_result_color">#ff808080</color>
+    <color name="list_pressed_color">#ffe8e8e8</color>
+    <color name="listview_pressed_color">#ffeaeaea</color>
+    <color name="ltgray">#ff787878</color>
+    <color name="my_lexue_big_header_bg">#ff0f98ec</color>
+    <color name="my_lexue_tab_normal_bg">#ff007cdc</color>
+    <color name="my_lexue_tab_pressed_bg">#ff008ce2</color>
+    <color name="mywealth_normal">#ff008ce2</color>
+    <color name="mywealth_pressed">#ff0186d8</color>
+    <color name="navigation_backgroud">#ff212a39</color>
+    <color name="navigation_item_line_backgroud">#ff0f1520</color>
+    <color name="navigation_item_selected_color">#ff00afff</color>
+    <color name="navigation_item_text_color_normal">#ffb6c1c5</color>
+    <color name="navigation_item_text_color_selected">#ffffffff</color>
+    <color name="orange">#ffffdc7e</color>
+    <color name="orange_border_btn_border_color">#ffff7e20</color>
+    <color name="orange_border_btn_disable_solid_color">#ffcdcdcd</color>
+    <color name="orange_border_btn_normal_solid_color">#ffffffff</color>
+    <color name="orange_border_btn_pressed_solid_color">#ffffdcc2</color>
+    <color name="orange_btn_disabled_background_color">#ffa9a9a9</color>
+    <color name="orange_btn_normal_background_color">#fff37e00</color>
+    <color name="orange_btn_pressed_background_color">#ffd96600</color>
+    <color name="orange_pressed_color">#ffeb5300</color>
+    <color name="orange_text_selected">#66ff6c00</color>
+    <color name="page_info_title_bar_normal_text_color">#ff808080</color>
+    <color name="page_info_title_bar_selected_text_color">#ffff6c00</color>
+    <color name="page_title_bar_indicator_color">#ffff6c00</color>
+    <color name="page_title_bar_normal_text_color">#ff808080</color>
+    <color name="page_title_bar_selected_text_color">#ff131313</color>
+    <color name="page_title_bar_selected_text_color2">#ffff6c00</color>
+    <color name="pbsto">#ffe7e7e7</color>
+    <color name="pc_defalut_color">#ffe3e3e3</color>
+    <color name="pie_button_bg">#aa001122</color>
+    <color name="pie_button_pressed">#aae39a25</color>
+    <color name="popupWindow_background">#80000000</color>
+    <color name="post_card_attribute_blue_color">#ff0099ff</color>
+    <color name="post_card_attribute_red_color">#ffff5546</color>
+    <color name="post_card_bg_color">#ffffffff</color>
+    <color name="post_card_rule_color">#ffff5546</color>
+    <color name="post_card_username_normal_color">#ff526373</color>
+    <color name="post_card_username_red_color">#ffff5546</color>
+    <color name="publish_bulletin_inputnum_color_disabled">#ff808080</color>
+    <color name="publish_bulletin_inputnum_color_enabled">#ff808080</color>
+    <color name="qa_foot_bar_text_color">#ffbdbdbd</color>
+    <color name="qa_post_edit_bg">#ffeaeaea</color>
+    <color name="qa_user_icon_more_bg">#66000000</color>
+    <color name="query_text_color">#ff131313</color>
+    <color name="querycollege_item_background">#fffcfcfc</color>
+    <color name="querycollege_line_selected">#ffff6c00</color>
+    <color name="querycollege_text_normal">#ffcdcdcd</color>
+    <color name="querycollege_text_selected">#ffff6c00</color>
+    <color name="recommend_bg">#ffffffff</color>
+    <color name="recommend_card_press_background">#ffe8e8e8</color>
+    <color name="recommend_line_bg">#ffd5d5d5</color>
+    <color name="red">#ffff0000</color>
+    <color name="reply_comment_user_color">#ffee6500</color>
+    <color name="risk_high_bg">#ffff6c00</color>
+    <color name="risk_high_bg_pressed">#ffff6c00</color>
+    <color name="risk_low_bg">#ff8fd52b</color>
+    <color name="risk_low_bg_pressed">#ff8fd52b</color>
+    <color name="myben_color">#ff84d526</color>
+    <color name="risk_mid_bg">#fff9c307</color>
+    <color name="risk_mid_bg_pressed">#fff9c307</color>
+    <color name="search_result_press">#ffebebeb</color>
+    <color name="searchbar_cancl_text_color">#ff007aff</color>
+    <color name="searchbar_text_color">#ff131313</color>
+    <color name="sendgift_gift_number_content_disabled">#ffe2e2e2</color>
+    <color name="sendgift_gift_number_content_normal">#ff131313</color>
+    <color name="sendgift_send_gift_bg_normal">#fff37e00</color>
+    <color name="sendgift_send_gift_bg_pressed">#ffd5d5d5</color>
+    <color name="subject_select_color">#ffff6c00</color>
+    <color name="teacher_comment_content_color">#ff808080</color>
+    <color name="teacher_comment_date">#ff999999</color>
+    <color name="teacher_comment_user_name_color">#ff131313</color>
+    <color name="teacher_evaluate_header_bar_background_color">#fff8f8f8</color>
+    <color name="teacher_evaluate_header_bar_bottom_line_color">#ffdfdfdf</color>
+    <color name="teacher_evaluate_header_bar_titl_text_color">#ff131313</color>
+    <color name="teacher_gift_content_color">#ff808080</color>
+    <color name="teacher_gift_user_name_color">#ff131313</color>
+    <color name="teacher_line_bg">#ffd5d5d5</color>
+    <color name="teacher_main_bottombar_background_color">#fff8f8f8</color>
+    <color name="teacher_main_bottombar_text_color">#ffff6c00</color>
+    <color name="teacher_main_follow_txt_pressed">#ffff9752</color>
+    <color name="teacher_main_line_separator_color">#ffd5d5d5</color>
+    <color name="teacher_main_photo_prise_color_disabled">#fff37e00</color>
+    <color name="teacher_main_photo_prise_color_enabled">#ffdcdcdc</color>
+    <color name="teacher_main_sticky_header_bar_background_color">#fff8f8f8</color>
+    <color name="teacher_main_sticky_header_bar_bottom_line_color">#ffdfdfdf</color>
+    <color name="tip_error_color">#ffee2737</color>
+    <color name="umeng_socialize_color_group">#ff2c3035</color>
+    <color name="umeng_socialize_comments_bg">#fff4f4f4</color>
+    <color name="umeng_socialize_divider">#ffe6e6e6</color>
+    <color name="umeng_socialize_edit_bg">#ffc4c4c4</color>
+    <color name="umeng_socialize_grid_divider_line">#fff8f8f8</color>
+    <color name="umeng_socialize_list_item_bgcolor">#ffffffff</color>
+    <color name="umeng_socialize_list_item_textcolor">#ff333333</color>
+    <color name="umeng_socialize_text_friends_list">#ff959696</color>
+    <color name="umeng_socialize_text_share_content">#ff666666</color>
+    <color name="umeng_socialize_text_time">#ff999999</color>
+    <color name="umeng_socialize_text_title">#ff464f61</color>
+    <color name="umeng_socialize_text_ucenter">#ff595959</color>
+    <color name="umeng_socialize_ucenter_bg">#ffeeeeee</color>
+    <color name="voice_simulate_color">#ff0099ff</color>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+    <color name="wallet_descript_text_color">#ff707070</color>
+    <color name="wallet_descript_text_disable_color">#88808080</color>
+    <color name="wallet_listitem_text_color">#ff131313</color>
+    <color name="wallet_listitem_text_disable_color">#88131313</color>
+    <color name="welcome_rightview_text_color">#ff6a6a6a</color>
+    <color name="yello_text">#ffff9600</color>
+    <color name="yiben_color">#ffff6c00</color>
+    <color name="personality_test_expand_group_bg_color">#fff8f8f8</color>
+    <color name="item_first_level_text_color">#ff131313</color>
+    <color name="item_second_level_text_color">#ff454545</color>
+    <color name="item_third_level_text_color">#ff727272</color>
+    <color name="half_orange_color">#40ff6c00</color>
+
+
+
+
+
+
+
+
+
+</resources>

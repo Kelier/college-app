@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/major_root_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+<!--
+    <com.lexue.zhiyuan.view.widget.ObservableScrollView
+        android:id="@id/major_scroll_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:persistentDrawingCache="scrolling"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbVertical="@drawable/list_scrollbar"
+        android:smoothScrollbar="true">
+
+        <LinearLayout
+            android:id="@id/major_content_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.lexue.zhiyuan.view.major.MajorTabContentContainer
+                android:id="@id/major_content_frame_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/major_detail_centent_container_margin_top">
+
+                <FrameLayout
+                    android:id="@id/major_info_page_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/follow_share_bar_height"
+                    android:paddingTop="@dimen/major_detail_sub_view_padding_top">
+
+                    <TextView
+                        android:id="@id/major_description"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="5.0dip"
+                        android:paddingLeft="15.0dip"
+                        android:paddingRight="15.0dip"
+                        android:textColor="#ff808080"
+                        android:textSize="13.0sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@id/major_course_page_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/follow_share_bar_height"
+                    android:paddingTop="@dimen/major_detail_sub_view_padding_top">
+
+                    <TextView
+                        android:id="@id/major_course_list"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="5.0dip"
+                        android:paddingLeft="15.0dip"
+                        android:paddingRight="15.0dip"
+                        android:textColor="#ff808080"
+                        android:textSize="13.0sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@id/major_school_ranking_page_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/follow_share_bar_height"
+                    android:paddingTop="@dimen/major_detail_sub_view_padding_top">
+
+                    <com.lexue.zhiyuan.view.widget.InScrollListView
+                        android:id="@id/major_ranking_list_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="@color/white"
+                        android:divider="@null"
+                        android:dividerHeight="0.0dip"
+                        android:listSelector="#00000000"
+                        android:overScrollMode="never" />
+
+                    <TextView
+                        android:id="@id/major_ranking_empty"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="5.0dip"
+                        android:paddingLeft="15.0dip"
+                        android:paddingRight="15.0dip"
+                        android:paddingTop="9.5dip"
+                        android:text="@string/major_detail_no_info_tip"
+                        android:textColor="#ff808080"
+                        android:textSize="13.0sp"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_gravity="top"
+                    android:background="#ffd5d5d5" />
+            </com.lexue.zhiyuan.view.major.MajorTabContentContainer>
+        </LinearLayout>
+    </com.lexue.zhiyuan.view.widget.ObservableScrollView>
+-->
+    <LinearLayout
+        android:id="@+id/major_header_view_container"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/major_detail_header_container_height"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/view_shared_headbar_height"
+            android:background="@null" />
+
+        <RelativeLayout
+            android:id="@+id/major_detail_container"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/major_detail_sub_container_height"
+            android:background="@color/white"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:paddingTop="15.0dip">
+
+            <TextView
+                android:id="@+id/major_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:includeFontPadding="false"
+                android:textColor="@color/orange_text_color"
+                android:textSize="23.0dip" />
+
+            <TextView
+                android:id="@+id/major_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/major_name"
+                android:layout_below="@id/major_name"
+                android:layout_marginTop="38.0dip"
+                android:drawableLeft="@drawable/rectangle_shape_orange"
+                android:drawablePadding="6.0dip"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text=""
+                android:textColor="#ff6a6a6a"
+                android:textSize="11.0dip" />
+
+            <TextView
+                android:id="@+id/major_years"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/major_id"
+                android:layout_below="@id/major_id"
+                android:layout_marginTop="7.0dip"
+                android:drawableLeft="@drawable/rectangle_shape_orange"
+                android:drawablePadding="6.0dip"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text=""
+                android:textColor="#ff6a6a6a"
+                android:textSize="11.0dip" />
+
+            <ImageView
+                android:id="@+id/major_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src="@drawable/profession_details_img" />
+
+            <TextView
+                android:id="@+id/major_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="关注"
+                android:textSize="20.0dip"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffd5d5d5" />
+        <!--
+        <com.lexue.zhiyuan.view.share.PageTitleBar
+            android:id="@id/major_tab_indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/view_shared_pagetitlebar_height"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />-->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffcdcdcd" />
+    </LinearLayout>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/color_theme"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        app:title=" " >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/nav_back_btn_normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="返回" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="专业详情"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <!--
+    <com.lexue.zhiyuan.view.widget.HeadBar
+        android:id="@id/major_headbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_shared_headbar_height"
+        android:layout_alignParentTop="true"
+        custom:barTitle="专业详情"
+        custom:leftButton="back"
+        custom:rightButton="none" />-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/schooldetails_foot_bg"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/college_detail_follow"
+            android:layout_width="0.0dip"
+            android:layout_height="80.0dip"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+            <TextView
+                android:id="@+id/college_detail_follow_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="14.0dip"
+                android:drawablePadding="5.0dip"
+                android:drawableTop="@drawable/btn_follow_selector"
+                android:text="关注"
+                android:textColor="@color/bottom_share_text_color_selector"
+                android:textSize="10.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/college_detail_share"
+            android:layout_width="0.0dip"
+            android:layout_height="80.0dip"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="14.0dip"
+                android:drawablePadding="5.0dip"
+                android:drawableTop="@drawable/btn_share_selector"
+                android:text="分享"
+                android:textColor="@color/bottom_share_text_color_selector"
+                android:textSize="10.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/major_detail_professional_consult"
+            android:layout_width="0.0dip"
+            android:layout_height="80.0dip"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="14.0dip"
+                android:drawablePadding="5.0dip"
+                android:drawableTop="@drawable/btn_teacherlist_selector"
+                android:text="@string/navigation_professonal_consult"
+                android:textColor="@color/bottom_share_text_color_selector"
+                android:textSize="10.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

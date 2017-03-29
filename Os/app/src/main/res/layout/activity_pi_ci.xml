@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/color_theme"
+        app:title=" ">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/nav_back_btn_normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="返回" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="批次线查询"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/select_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/province"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="上海市"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/nav_screen_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/nav_screening_down_selector" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:persistentDrawingCache="scrolling"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarThumbVertical="@drawable/list_scrollbar"
+            android:smoothScrollbar="true">
+
+            <LinearLayout
+                android:id="@+id/activity_college_batchquery_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4.0px"
+                        android:layout_height="19.0dip"
+                        android:layout_marginLeft="15.0dip"
+                        android:background="@color/querycollege_line_selected" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9.0dip"
+                        android:text="@string/batchqueryactivity_science"
+                        android:textColor="#ff131313"
+                        android:textSize="24.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dip"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginTop="14.0dip"
+                    android:background="#fff7f7f7"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" />
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:paddingRight="9.0dip"
+                        android:text="@string/batchqueryactivity_firstbatch"
+                        android:textColor="@color/account_tip_text_color"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:paddingRight="9.0dip"
+                        android:text="@string/batchqueryactivity_secondbatch"
+                        android:textColor="@color/account_tip_text_color"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:paddingRight="9.0dip"
+                        android:text="@string/batchqueryactivity_thirdbatch"
+                        android:textColor="@color/account_tip_text_color"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <com.wan.college.ui.MajorListView
+                    android:id="@+id/fragment_college_sciencebatchfragment_sciencelist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:divider="@null"
+                    android:listSelector="@android:color/transparent"
+                    android:overScrollMode="never" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="41.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4.0px"
+                        android:layout_height="19.0dip"
+                        android:layout_marginLeft="15.0dip"
+                        android:background="@color/querycollege_line_selected" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9.0dip"
+                        android:text="@string/batchqueryactivity_arts"
+                        android:textColor="#ff131313"
+                        android:textSize="24.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dip"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginTop="14.0dip"
+                    android:background="#fff7f7f7"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0" />
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:paddingRight="9.0dip"
+                        android:text="@string/batchqueryactivity_firstbatch"
+                        android:textColor="@color/account_tip_text_color"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:paddingRight="9.0dip"
+                        android:text="@string/batchqueryactivity_secondbatch"
+                        android:textColor="@color/account_tip_text_color"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:paddingRight="9.0dip"
+                        android:text="@string/batchqueryactivity_thirdbatch"
+                        android:textColor="@color/account_tip_text_color"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <com.wan.college.ui.MajorListView
+                    android:id="@+id/fragment_college_sciencebatchfragment_artslist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:divider="@null"
+                    android:listSelector="@android:color/transparent"
+                    android:overScrollMode="never" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="visible">
+            <com.mingle.widget.LoadingView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:loadingText="加载中..." />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/view_province_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#80000000"
+            android:visibility="gone">
+            <ListView
+                android:id="@+id/listview_college_province"
+                android:layout_width="fill_parent"
+                android:layout_height="306.0dip"
+                android:background="@color/white"
+                android:cacheColorHint="@color/white"
+                android:divider="@color/list_divide_color"
+                android:dividerHeight="1.0px"
+                android:listSelector="@drawable/list_item_selector"
+                android:overScrollMode="never"
+                android:persistentDrawingCache="scrolling"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarThumbVertical="@drawable/list_scrollbar"
+                android:smoothScrollbar="true" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_discovery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_my"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.8"
+            android:background="@mipmap/mypage_headbj_img"/>
+
+
+        <RelativeLayout
+            android:id="@+id/my_vertical"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp">
+
+            <com.wan.college.ui.RoundImageView
+                android:id="@+id/my_avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/mypage_headbg_img" />
+
+            <com.wan.college.ui.XCRoundRectImageView
+                android:id="@+id/imageview"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/avatar_bgcolor_selector"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/image_gender"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/sex_unknow_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/my_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:clickable="true"/>
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="45dp"
+            android:layout_marginEnd="5dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="距离高考"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:text="天"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/day_num"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_marginStart="4dp"
+                android:gravity="center"
+                android:layout_toEndOf="@+id/textView4"
+                android:text="999"
+                android:textColor="@color/white"
+                android:textSize="36sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="#40ffffff"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/item_subject"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/mypage_linerlayout_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/mypage_subject_icon" />
+
+                <TextView
+                    android:id="@+id/my_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/mypage_linerlayout_selector"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="0.3dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/border_gray" />
+
+                <LinearLayout
+                    android:id="@+id/item_province"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/mypage_linerlayout_selector"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/mypage_area_icon" />
+
+                    <TextView
+                        android:id="@+id/my_province"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.3dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/border_gray" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/item_score"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/mypage_linerlayout_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/mypage_score_icon" />
+
+                <TextView
+                    android:id="@+id/my_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout_my">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+            <!--发布问答-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_me_ques"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:id="@+id/me_item_qu"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/rv_discovery_bottomborder">
+
+                        <ImageView
+                            android:id="@+id/me_item_qu_image"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@mipmap/mypage_concerned_ques_icon" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/list_next_step_btn_normal" />
+
+                        <TextView
+                            android:id="@+id/me_item_qu_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/me_item_qu_image"
+                            android:paddingLeft="6dp"
+                            android:text="我发布的问答"
+                            android:textColor="@color/text_black"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+            <!--关注学校-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_me_school"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:id="@+id/me_item_school"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/rv_discovery_bottomborder">
+
+                        <ImageView
+                            android:id="@+id/me_item_school_image"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@mipmap/mypage_school_icon" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/list_next_step_btn_normal" />
+
+                        <TextView
+                            android:id="@+id/me_item_school_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/me_item_school_image"
+                            android:paddingLeft="6dp"
+                            android:text="我关注的学校"
+                            android:textColor="@color/text_black"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+            <!--关注专业-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_me_pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:id="@+id/me_item_zy"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/rv_discovery_bottomborder">
+
+                        <ImageView
+                            android:id="@+id/me_item_zy_image"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@mipmap/mypage_pro_icon" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/list_next_step_btn_normal" />
+
+                        <TextView
+                            android:id="@+id/me_item_zy_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/me_item_zy_image"
+                            android:paddingLeft="6dp"
+                            android:text="我关注的专业"
+                            android:textColor="@color/text_black"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <!--意见反馈-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_me_feed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:id="@+id/me_item_feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/rv_discovery_bottomborder">
+
+                        <ImageView
+                            android:id="@+id/me_item_feedback_image"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@mipmap/mypage_concerned_order_icon" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/list_next_step_btn_normal" />
+
+                        <TextView
+                            android:id="@+id/me_item_feedback_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/me_item_feedback_image"
+                            android:paddingLeft="6dp"
+                            android:text="意见反馈"
+                            android:textColor="@color/text_black"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <!--设置-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_me_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <RelativeLayout
+                        android:id="@+id/me_item_logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:id="@+id/me_item_logout_image"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@mipmap/mypage_setting_buttion" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/list_next_step_btn_normal" />
+
+                        <TextView
+                            android:id="@+id/me_item_logout_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/me_item_logout_image"
+                            android:paddingLeft="6dp"
+                            android:text="设置"
+                            android:textColor="@color/text_black"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

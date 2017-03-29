@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/color_theme"
+        app:title=" ">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/nav_back_btn_normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="返回" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="排行榜"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/activity_pai_hang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.wan.college.activity.discovery.PaiHangActivity">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_paihang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:overScrollMode="never"
+            android:scrollbars="vertical" />
+
+        <RelativeLayout
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="visible">
+            <com.mingle.widget.LoadingView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:loadingText="加载中..." />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

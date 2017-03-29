@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff0f0f0"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/color_theme"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        app:title=" " >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/nav_back_btn_normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="返回" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/college_query"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/select_container"
+        android:layout_width="fill_parent"
+        android:layout_height="39.0dip"
+        android:background="#fff0f0f0"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/area_select"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/area_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/college_categorize_dawable_padding"
+                android:drawableRight="@drawable/type_select_updown_selector"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:padding="0.0dip"
+                android:singleLine="true"
+                android:text="地区"
+                android:textColor="@color/college_ategory_text_color_selector"
+                android:textSize="@dimen/college_categorize_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/major_select"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/major_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/college_categorize_dawable_padding"
+                android:drawableRight="@drawable/type_select_updown_selector"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:padding="0.0dip"
+                android:singleLine="true"
+                android:text="专业"
+                android:textColor="@color/college_ategory_text_color_selector"
+                android:textSize="@dimen/college_categorize_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/college_type_select"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/college_type_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/college_categorize_dawable_padding"
+                android:drawableRight="@drawable/type_select_updown_selector"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:padding="0.0dip"
+                android:singleLine="true"
+                android:text="类别"
+                android:textColor="@color/college_ategory_text_color_selector"
+                android:textSize="@dimen/college_categorize_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/more_select"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/more_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/college_categorize_dawable_padding"
+                android:drawableRight="@drawable/type_select_updown_selector"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:padding="0.0dip"
+                android:singleLine="true"
+                android:text="筛选"
+                android:textColor="@color/college_ategory_text_color_selector"
+                android:textSize="@dimen/college_categorize_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/common_line_bg" />
+    <RelativeLayout
+        android:id="@+id/content_else"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.wan.college.ui.OOSwipeRefreshLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scrollableChildId="@+id/college_listview"
+        android:background="@android:color/transparent"
+        android:id="@+id/main_swiperefresh">
+        <FrameLayout
+            android:id="@+id/content_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/college_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff0f0f0"
+                android:cacheColorHint="@color/white"
+                android:divider="@color/list_divide_color"
+                android:dividerHeight="0.0px"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0.0dip"
+                android:listSelector="@null"
+                android:overScrollMode="never"
+                android:persistentDrawingCache="scrolling"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarThumbVertical="@drawable/list_scrollbar"
+                android:smoothScrollbar="true"/>
+            <RelativeLayout
+                android:id="@+id/loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:visibility="visible">
+                <com.mingle.widget.LoadingView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:loadingText="加载中..." />
+            </RelativeLayout>
+        </FrameLayout>
+    </com.wan.college.ui.OOSwipeRefreshLayout>
+
+        <FrameLayout
+            android:id="@+id/view_province_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#80000000"
+            android:clickable="true"
+            android:visibility="gone">
+            <ListView
+                android:id="@+id/listview_college_province"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="306.0dip"
+                android:background="@color/white"
+                android:cacheColorHint="@color/white"
+                android:divider="@color/list_divide_color"
+                android:dividerHeight="1.0px"
+                android:listSelector="@drawable/list_item_selector"
+                android:overScrollMode="never"
+                android:persistentDrawingCache="scrolling"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarThumbVertical="@drawable/list_scrollbar"
+                android:smoothScrollbar="true" />
+            <ListView
+                android:id="@+id/listView_college_type"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="306.0dip"
+                android:background="@color/white"
+                android:cacheColorHint="@color/white"
+                android:divider="@color/list_divide_color"
+                android:dividerHeight="1.0px"
+                android:listSelector="@drawable/list_item_selector"
+                android:overScrollMode="never"
+                android:persistentDrawingCache="scrolling"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarThumbVertical="@drawable/list_scrollbar"
+                android:smoothScrollbar="true" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

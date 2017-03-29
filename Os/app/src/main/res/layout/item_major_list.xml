@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_interested_major"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/item_major"
+        android:layout_width="wrap_content"
+        android:layout_height="38.0dip"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:textSize="13.0sp" />
+    <TextView
+        android:id="@+id/item_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="38.0dip"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:paddingRight="15.0dip"
+        android:textSize="13.0sp" />
+
+</RelativeLayout>

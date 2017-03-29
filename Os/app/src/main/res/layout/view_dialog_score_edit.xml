@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/view_dialog_score_container"
+        android:layout_width="222.0dip"
+        android:layout_height="198.0dip"
+        android:background="#ffffffff"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34.0dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="我的高考成绩"
+                android:textColor="#ff808080"
+                android:textSize="9.0sp" />
+
+            <EditText
+                android:id="@+id/score_input"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:textColor="@color/color_theme"
+                android:textColorHint="@color/color_theme"
+                android:textSize="44.0sp" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2.0dip"
+                android:src="@drawable/input_score_bg" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/view_dialog_score_confirm"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="11.0dip"
+            android:src="@drawable/guide_done_btn_selector" />
+
+
+    </RelativeLayout>

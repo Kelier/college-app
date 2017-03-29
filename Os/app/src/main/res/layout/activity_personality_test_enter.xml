@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/color_theme"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/nav_back_btn_normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="返回" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/view_shared_headbar_personality_test_enter_title" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="113.0dip"
+                android:background="@drawable/professional_test_title_banner" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:lineSpacingExtra="6.0dip"
+                android:text="@string/personality_description"
+                android:textColor="#ff131313"
+                android:textSize="13.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:padding="0.0dip"
+                        android:text="专业版"
+                        android:textColor="#ff87e355"
+                        android:textSize="12.0sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12.0dip"
+                        android:background="@drawable/professional_test_title_image" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12.0dip"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="0.0dip"
+                        android:text="权威、专业"
+                        android:textColor="#ff87e355"
+                        android:textSize="12.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/start_professional_test"
+                        android:layout_width="112.0dip"
+                        android:layout_height="27.0dip"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20.0dip"
+                        android:background="@drawable/btn_paper_test_green_selector"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:text="戳我答题"
+                        android:textColor="@color/orange_btn_text_color_selector"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1.0px"
+                    android:layout_height="84.0dip"
+                    android:layout_marginTop="46.0dip"
+                    android:background="#ffd5d5d5" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:padding="0.0dip"
+                        android:text="简易版"
+                        android:textColor="@color/orange_color"
+                        android:textSize="12.0sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12.0dip"
+                        android:background="@drawable/simple_test_title_image" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12.0dip"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="0.0dip"
+                        android:text="快速、便捷"
+                        android:textColor="@color/orange_color"
+                        android:textSize="12.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/start_simple_test"
+                        android:layout_width="112.0dip"
+                        android:layout_height="27.0dip"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20.0dip"
+                        android:background="@drawable/btn_paper_test_orange_selector"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:text="戳我答题 "
+                        android:textColor="@color/orange_btn_text_color_selector"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15.0dip"
+                android:layout_marginTop="31.0dip"
+                android:orientation="vertical">
+                <!--
+                <LinearLayout
+                    android:id="@+id/history_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15.0dip"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:background="@color/list_divide_color" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="44.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="历史测评结果："
+                        android:textColor="#ff808080"
+                        android:textSize="14.0sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:background="@color/list_divide_color" />
+
+                    <com.lexue.zhiyuan.view.widget.InScrollListView
+                        android:id="@id/hoistory_test_result"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="#ffd5d5d5"
+                        android:dividerHeight="1.0px"
+                        android:fadingEdge="none"
+                        android:fadingEdgeLength="0.0dip"
+                        android:listSelector="@android:color/transparent"
+                        android:overScrollMode="never" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:background="@color/list_divide_color" />
+                </LinearLayout>
+                -->
+                <TextView
+                    android:id="@+id/kindly_reminder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_marginRight="4.0dip"
+                    android:background="@drawable/kindly_reminder_container_bg"
+                    android:paddingBottom="5.0dip"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip"
+                    android:paddingTop="10.0dip"
+                    android:textColor="#ff131313"
+                    android:text="@string/personality_kindly_reminder_content"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

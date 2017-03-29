@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_discovery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:background="@color/E7_gray"
+        android:id="@+id/discover_head_search">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/search_btn">
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/checkdata_homepage_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:text="搜索院校"
+                android:textSize="12sp"
+                android:textColor="@color/text_gray"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <!--
+        <android.support.v7.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            app:queryHint="输入院校"
+            android:background="@color/white">
+        </android.support.v7.widget.SearchView>
+        -->
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/discover_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/discover_head_search">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:id="@+id/recycler_view1">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_footer">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/color_theme">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp">
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <com.wan.college.ui.ControlScrollViewPager
+        android:id="@+id/viewPager_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:background="@color/white">
+    </com.wan.college.ui.ControlScrollViewPager>
+</LinearLayout>
+
+
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/footer_top_border"
+        android:id="@+id/footer_menu_rgroup"
+        android:checkedButton="@+id/footer_rbtn_home"
+        android:layout_alignParentBottom="true"
+        android:weightSum="4">
+
+        <RadioButton
+            android:drawableTop="@drawable/footer_home_selector"
+            android:id="@id/footer_rbtn_home"
+            style="@style/footer_menu_item"
+            android:text="首页"
+            />
+
+        <RadioButton
+            android:drawableTop="@drawable/footer_qa_selector"
+            android:id="@+id/footer_rbtn_category"
+            style="@style/footer_menu_item"
+            android:text="问答"
+            />
+
+        <RadioButton
+            android:drawableTop="@drawable/footer_discovery_selector"
+            android:id="@+id/footer_rbtn_discovery"
+            style="@style/footer_menu_item"
+            android:text="发现"
+            />
+        <RadioButton
+            android:drawableTop="@drawable/footer_my_selector"
+            android:id="@+id/footer_rbtn_my"
+            style="@style/footer_menu_item"
+            android:text="我的"
+            />
+    </RadioGroup>
+
+</RelativeLayout>

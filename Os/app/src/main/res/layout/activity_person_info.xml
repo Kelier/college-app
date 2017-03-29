@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/person_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/color_theme"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/nav_back_btn_normal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="个人资料修改" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F8FF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/item_camera"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/list_item_selector"
+            android:clickable="true">
+
+
+            <ImageView
+                android:id="@+id/next_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/list_next_step_btn_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="26dp"
+                android:paddingLeft="5dp"
+                android:text="头像" />
+
+            <com.wan.college.ui.RoundImageView
+                android:id="@+id/my_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="11dp"
+                android:src="@mipmap/mypage_headbg_img"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/next_step" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/item_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:background="@drawable/list_item_selector">
+
+            <TextView
+                android:id="@+id/my_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="13dp"
+                android:layout_toStartOf="@+id/next_step1" />
+
+            <ImageView
+                android:id="@+id/next_step1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/list_next_step_btn_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="26dp"
+                android:paddingLeft="5dp"
+                android:text="昵称" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@drawable/rv_discovery_bottomborder" />
+
+        <RelativeLayout
+            android:id="@+id/item_gender"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:background="@drawable/list_item_selector">
+
+            <TextView
+                android:id="@+id/my_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="13dp"
+                android:layout_toStartOf="@+id/next_step5" />
+
+            <ImageView
+                android:id="@+id/next_step5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/list_next_step_btn_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="26dp"
+                android:paddingLeft="5dp"
+                android:text="性别" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@drawable/rv_discovery_bottomborder" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:id="@+id/item_subject"
+            android:background="@drawable/list_item_selector">
+
+            <TextView
+                android:id="@+id/my_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="13dp"
+                android:layout_toStartOf="@+id/next_step2" />
+
+            <ImageView
+                android:id="@+id/next_step2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/list_next_step_btn_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="26dp"
+                android:paddingLeft="5dp"
+                android:text="科别" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@drawable/rv_discovery_bottomborder" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:id="@+id/item_province"
+            android:background="@drawable/list_item_selector">
+
+            <TextView
+                android:id="@+id/my_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="13dp"
+                android:layout_toStartOf="@+id/next_step3"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/next_step3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/list_next_step_btn_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="26dp"
+                android:paddingLeft="5dp"
+                android:text="城市" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@drawable/rv_discovery_bottomborder" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:id="@+id/item_score"
+            android:background="@drawable/list_item_selector">
+
+            <TextView
+                android:id="@+id/my_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="13dp"
+                android:layout_toStartOf="@+id/next_step4"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/next_step4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/list_next_step_btn_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="26dp"
+                android:paddingLeft="5dp"
+                android:text="分数" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- 这里的linearLayout加android:background=""这个属性要谨慎，如果加了后，popwindow是不能半透明了的 -->
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_gender"
+        >
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/rv_discovery_bottomborder"
+            android:button="@null"
+            android:id="@+id/man"
+ android:textColor="@color/base_shallow_black"
+            android:text="男"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/rv_discovery_bottomborder"
+            android:id="@+id/woman"
+            android:textColor="@color/base_shallow_black"
+            android:text="女"/>
+
+    </RadioGroup>
+
+</LinearLayout>

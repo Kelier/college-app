@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+<RelativeLayout
+    android:background="#70dfdfdf"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+    <TextView
+        android:id="@+id/pop_cancel"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textSize="16dp"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:id="@+id/pop_confirm"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="确定"
+        android:textSize="16dp"
+        android:textColor="#489cfa"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+
+    <com.wx.wheelview.widget.WheelView
+        android:id="@+id/wheelview"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff0f0f0"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/color_theme"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/nav_back_btn_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="返回" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="我关注的学校" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/right_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="对比"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/common_line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.wan.college.ui.OOSwipeRefreshLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scrollableChildId="@+id/college_listview"
+        android:background="@android:color/transparent"
+        android:id="@+id/main_swiperefresh">
+        <FrameLayout
+            android:id="@+id/content_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/college_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff0f0f0"
+                android:cacheColorHint="@color/white"
+                android:divider="@color/list_divide_color"
+                android:dividerHeight="0.0px"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0.0dip"
+                android:listSelector="@null"
+                android:overScrollMode="never"
+                android:persistentDrawingCache="scrolling"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarThumbVertical="@drawable/list_scrollbar"
+                android:smoothScrollbar="true"/>
+            <RelativeLayout
+                android:id="@+id/loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:visibility="visible">
+                <com.mingle.widget.LoadingView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:loadingText="加载中..." />
+            </RelativeLayout>
+        </FrameLayout>
+    </com.wan.college.ui.OOSwipeRefreshLayout>
+
+        <FrameLayout
+            android:id="@+id/view_province_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#80000000"
+            android:visibility="gone">
+            <ListView
+                android:id="@+id/listview_college_province"
+                android:layout_width="fill_parent"
+                android:layout_height="306.0dip"
+                android:background="@color/white"
+                android:cacheColorHint="@color/white"
+                android:divider="@color/list_divide_color"
+                android:dividerHeight="1.0px"
+                android:listSelector="@drawable/list_item_selector"
+                android:overScrollMode="never"
+                android:persistentDrawingCache="scrolling"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarThumbVertical="@drawable/list_scrollbar"
+                android:smoothScrollbar="true" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

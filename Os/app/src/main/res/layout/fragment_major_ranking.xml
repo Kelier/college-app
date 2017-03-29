@@ -1,0 +1,56 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wan.observablescrollview.ObservableScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/major_detail_header_container_height"
+                android:background="@android:color/transparent" />
+            <RelativeLayout
+                android:id="@+id/major_ranking_container"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <com.wan.college.ui.MajorListView
+                android:id="@+id/major_ranking_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fffafafa"
+                android:cacheColorHint="@color/white"
+                android:divider="@color/list_divide_color"
+                android:dividerHeight="1.0px"
+                android:listSelector="#00000000"
+                android:overScrollMode="never" />
+
+            <TextView
+                android:id="@+id/major_ranking_empty"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="5.0dip"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:paddingTop="9.5dip"
+                android:gravity="center_horizontal"
+                android:text="@string/major_detail_no_info_tip"
+                android:textColor="#ff808080"
+                android:textSize="13.0sp"
+                android:visibility="gone" />
+            </RelativeLayout>
+            </LinearLayout>
+    </com.wan.observablescrollview.ObservableScrollView>
+</RelativeLayout>

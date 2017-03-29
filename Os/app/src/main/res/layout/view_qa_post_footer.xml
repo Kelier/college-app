@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5.0dip">
+
+    <TextView
+        android:id="@+id/browse_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/communitypage_views_icon"
+        android:drawablePadding="@dimen/drawable_left_padding"
+        android:text="浏览"
+        android:textColor="@color/qa_foot_bar_text_color"
+        android:textSize="@dimen/qa_foot_bar_text_size" />
+
+    <TextView
+        android:id="@+id/update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:drawableLeft="@drawable/communitypage_times_icon"
+        android:drawablePadding="@dimen/drawable_left_padding"
+        android:singleLine="true"
+        android:text="2016-01-15"
+        android:textColor="@color/qa_foot_bar_text_color"
+        android:textSize="@dimen/qa_foot_bar_text_size" />
+
+    <View
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+
+    <FrameLayout
+        android:id="@+id/user_answer_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12.0dip">
+
+        <TextView
+            android:id="@+id/answer_button"
+            android:layout_width="83.0dip"
+            android:layout_height="27.0dip"
+            android:background="@drawable/qa_orange_circle_button_selector"
+            android:gravity="center"
+            android:text="我来回答"
+            android:textColor="@color/orange_color"
+            android:textSize="14.0sp" />
+
+        <LinearLayout
+            android:id="@+id/answer_user_list_container"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_height="27.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_one"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_marginRight="7.0dip"
+                android:scaleType="centerCrop" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_two"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_marginRight="7.0dip"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/user_count_container"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_marginRight="7.0dip">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_three"
+                    android:layout_width="25.0dip"
+                    android:layout_height="25.0dip"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/user_count_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="11"
+                    android:textColor="@color/white"
+                    android:textSize="10.0sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/communitypage_nextpage_icon" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

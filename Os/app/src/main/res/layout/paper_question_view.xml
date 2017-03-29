@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/question_list_group_item_selector"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="44.0dip"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingBottom="14.0dip"
+            android:paddingTop="14.0dip">
+
+            <View
+                android:id="@+id/question_select_tag"
+                android:layout_width="4.0dip"
+                android:layout_height="13.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="2.0dip"
+                android:background="@color/orange_color"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/question_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="14.0dip"
+                android:includeFontPadding="false"
+                android:textColor="#ff131313"
+                android:textSize="15.0dip" />
+
+            <TextView
+                android:id="@+id/question_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/question_index"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="4.0dip"
+                android:textColor="#ff131313"
+                android:textSize="15.0dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="25.0dip"
+            android:layout_marginRight="14.0dip"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/answered_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="40.0dip"
+        android:background="@drawable/question_list_dashline"
+        android:layerType="software" />
+</LinearLayout>

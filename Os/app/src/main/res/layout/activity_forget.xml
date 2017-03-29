@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:theme="@style/AppTheme">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_weight="3"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:id="@+id/ll_getCode_forget">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="你可以通过绑定的手机重置密码"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/et_phone_forget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号码"
+            android:inputType="number"
+            android:imeOptions="actionUnspecified"
+            android:drawablePadding="30dp"
+            android:textSize="16dp"
+            android:maxLines="1"
+            android:textColor="@color/color_theme"
+            android:padding="16dp"
+            android:singleLine="true"
+            android:layout_marginTop="8dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_checkCode_forget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_weight="3"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="invisible"
+        >
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="验证码已发送到手机，请在5分钟内完成重置"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/et_code_forget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入验证码"
+            android:imeOptions="actionUnspecified"
+            android:drawablePadding="30dp"
+            android:textSize="16dp"
+            android:maxLines="1"
+            android:textColor="@color/color_theme"
+            android:singleLine="true"
+            android:layout_marginTop="40dp"/>
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="下一步"
+            android:id="@+id/btn_next_forget"
+            android:textColor="@color/white"
+            android:background="@color/color_theme"
+            android:padding="16dp"
+            android:layout_marginTop="120dp"
+
+
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取验证码"
+        android:id="@+id/btn_getCode_forget"
+        android:textColor="@color/white"
+        android:background="@color/color_theme"
+        android:padding="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignTop="@id/ll_getCode_forget"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/rpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/ll_getCode_forget"
+        android:layout_alignParentStart="true">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="最后一步"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/newpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入新密码"
+            android:inputType="textPassword"
+            android:imeOptions="actionUnspecified"
+            android:drawablePadding="30dp"
+            android:textSize="16dp"
+            android:maxLines="1"
+            android:textColor="@color/color_theme"
+            android:padding="16dp"
+            android:singleLine="true"
+            android:layout_margin="16dp"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:id="@+id/btn_ok_forget"
+            android:textColor="@color/white"
+            android:background="@color/color_theme"
+            android:padding="16dp"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_discovery_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.wan.college.activity.discovery.DiscoverySearchActivity">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:background="@color/E7_gray"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:id="@+id/discover_head_search">
+
+        <RelativeLayout
+            android:id="@+id/space_search"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="19"
+            android:background="@drawable/search_btn">
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/checkdata_homepage_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="搜索院校"
+                android:textColorHint="@color/text_gray"
+                android:imeOptions="actionSearch"
+                android:layout_marginLeft="30dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/edit_search" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="取消"/>
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热门搜索"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/discover_head_search"
+        android:layout_marginTop="19dp"
+        android:id="@+id/tv_history_search" />
+
+    <GridView
+        android:id="@+id/gv_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/tv_history_search"
+        android:numColumns="3"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentStart="true"></GridView>
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/gv_history"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="清空记录"
+        android:background="@drawable/clear_history"/>
+
+</RelativeLayout>

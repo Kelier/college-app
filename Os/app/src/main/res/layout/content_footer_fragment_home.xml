@@ -1,0 +1,396 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F7F9FF"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/color_theme">
+
+                <RelativeLayout
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@mipmap/recommend_pie_chart_bg"
+                    android:layout_centerHorizontal="true"/>
+                <com.wan.college.ui.AnimationCirclePie
+                    android:id="@+id/college_num_pie"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/college_num_pie_bg"
+                    android:layout_centerHorizontal="true">
+                    <RelativeLayout
+                        android:id="@+id/score_container"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/my_score"
+                            android:textSize="44sp"
+                            android:textColor="#ff6a6a6a"
+                            android:gravity="center_vertical"
+                            android:layout_centerHorizontal="true"/>
+
+
+                        <com.romainpiel.shimmer.ShimmerTextView
+                            android:id="@+id/shimmer_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="点击设置分数"
+                            android:textSize="9.0sp"
+                            android:layout_below="@id/my_score"
+                            android:layout_gravity="center"
+                            android:textColor="#ffa0a0a0"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="分"
+                            android:textSize="9.0sp"
+                            android:layout_marginTop="12dp"
+                            android:layout_toEndOf="@+id/my_score"
+                            android:id="@+id/textView5" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/my_province"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="天津"
+                            android:textSize="12sp"
+                            android:textColor="@color/E7_gray"
+                            android:layout_marginRight="12dp"/>
+
+                        <LinearLayout
+                            android:layout_width="0.3dp"
+                            android:layout_height="12dp"
+                            android:background="@color/E7_gray"
+                            android:layout_centerVertical="true"/>
+
+                        <TextView
+                            android:id="@+id/my_subject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="理科"
+                            android:textSize="12sp"
+                            android:textColor="@color/E7_gray"
+                            android:layout_marginLeft="12dp"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/item_kechongci"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/dis_image"
+                        android:background="@drawable/rv_discovery_bottomborder"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/dis_title_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recomment_sprint_des"
+                            android:textColor="@color/text_black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/dis_title_text_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/dis_title_text"
+                            android:paddingTop="2dp"
+                            android:text="@string/admission_probility_des"
+                            android:textColor="@color/text_gray"
+                            android:textSize="12dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@id/dis_image"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/recommend_homepage_kechongci"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true">
+                        <com.wan.college.ui.NumPicTextView
+                            android:id="@+id/high_risk_college_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4.0dip"
+                            android:text="所"
+                            android:textColor="@color/gray_text_color"
+                            android:textSize="@dimen/recomment_card_collge_count_tip_text_size" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="20.0dip"
+                            android:src="@drawable/home_recommend_arrow_selector" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/item_wentuo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/dis_image"
+                        android:background="@drawable/rv_discovery_bottomborder"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/dis_title_text2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/recomment_suggest_des"
+                                android:textColor="@color/text_black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/dis_title_text_content2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/dis_title_text2"
+                                android:paddingTop="2dp"
+                                android:text="@string/admission_probility_des"
+                                android:textColor="@color/text_gray"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@id/dis_image"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/recommend_homepage_wentuo"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true">
+                        <com.wan.college.ui.NumPicTextView
+                            android:id="@+id/mid_risk_college_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4.0dip"
+                            android:text="所"
+                            android:textColor="@color/gray_text_color"
+                            android:textSize="@dimen/recomment_card_collge_count_tip_text_size" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="20.0dip"
+                            android:src="@drawable/home_recommend_arrow_selector" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/item_baodi"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/dis_image"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/dis_title_text3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/recomment_safe_des"
+                                android:textColor="@color/text_black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/dis_title_text_content3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/dis_title_text3"
+                                android:paddingTop="2dp"
+                                android:text="@string/admission_probility_des"
+                                android:textColor="@color/text_gray"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@id/dis_image"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/recommend_homepage_baodi"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true">
+                        <com.wan.college.ui.NumPicTextView
+                            android:id="@+id/low_risk_college_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4.0dip"
+                            android:text="所"
+                            android:textColor="@color/gray_text_color"
+                            android:textSize="@dimen/recomment_card_collge_count_tip_text_size" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginRight="20.0dip"
+                            android:src="@drawable/home_recommend_arrow_selector" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+         <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:background="#F7F9FF"/>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <ImageView
+                  android:id="@+id/imageview_left"
+                  android:layout_weight="1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@mipmap/pic_zhengce"/>
+              <LinearLayout
+                  android:layout_width="1dp"
+                  android:background="@color/college_content_line"
+                  android:layout_height="match_parent"/>
+              <ImageView
+                  android:id="@+id/imageview_right"
+                  android:layout_weight="1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@mipmap/pic_ceshi"/>
+
+          </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
