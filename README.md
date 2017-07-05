@@ -9,7 +9,6 @@
 运行环境 AndroidStudio2
 SDK：19~24
 points：butterknife,junit,fastjson,画布canvas,比较新的一些类库什么的
-
 ```
 
 clone下来后重建gradle，运行即可
